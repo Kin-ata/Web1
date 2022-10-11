@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thông tin đăng nhập</title>
+<link rel="stylesheet" type="text/css" href="dangnhap.css">
+<script src="dangnhap.js"></script>
+
+</head>
+<body onLoad="txtTenDN.focus();">
+<form action="" menthod="post" name="frmDangNhap" id="frmDangNhap" onSubmit="return GuiThongTin();">
+<table cellpadding="5" cellspacing="5">
+    <tr align="center"><td colspan="2"><h1>Form Đăng nhập</h1></td></tr>
+    <tr><td align="right">Tên đăng nhập</td>
+        <td><input type="text" id="txtTenDN" name="txtTenDN"  size="30" maxlength="25" class="txt"></td></tr>
+    <tr><td align="right">Mật khẩu</td>
+        <td><input type="password" id="txtMK" name="txtMK" size="30" maxlength="25" class="txt"></td></tr>
+    <tr align="center">
+        <td colspan="2">
+        <input type="submit" id="btnDangNhap" name="btnDangNhap" value="Đăng nhập" class="btn">
+        <input type="reset" id="btnLamLai" name="btnLamLai" value="Làm lại" class="btn" onClick="LamLai();">
+        </td></tr>
+    </tr align="center"><td colspan="2" height="50"><label id="thongbao"></label></td></tr>
+</table>
+</form>
+</body>
+</html>

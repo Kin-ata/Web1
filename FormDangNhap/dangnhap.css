@@ -1,0 +1,33 @@
+/* CSS */
+body{
+    margin-top: 150px;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+table{
+    background: url(login.jpg) right center no-repeat;
+    background-size: contain;
+    border: 2px dotted #B90003;
+    border-radius: 10px;
+    width: 35%;
+    height: 300px;
+    margin: auto;
+}
+l1{ color: #B90003; }
+.txt{
+    background-color:rgba(207,6,9,0.3);
+    border: 1px dotted #B90003;
+    border-radius: 10px;
+    padding: 5px;
+}
+.btn{
+    background-image:linear-gradient(#B90003,#ff0000);
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px;
+}
+#thongbao{
+    color: #B90003;
+    font-style: italic;
+}

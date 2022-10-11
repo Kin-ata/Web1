@@ -1,0 +1,42 @@
+/* CSS */
+body{
+    margin-top: 150px;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px #ff0000, -1px -1px 3px #ff0000, 0px 0px 10px #B90003;
+}
+table{
+    background: url(khuyen-mai.png) center bottom no-repeat;
+    background-size: contain;
+    border: 2px solid #B90003;
+    box-shadow: #B90003 20px 20px 10px;
+    border-radius: 10px;
+    width: 75%;
+    height: 300px;
+    margin: auto;
+}
+.txt{
+    background-color:rgba(207,6,9,0.3);
+    border: 1px solid #B90003;
+    border-radius: 10px;
+    padding: 5px;
+}
+.btn{
+    background-image:linear-gradient(#B90003,#ff0000);
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 5px;
+    border: 2px;
+}
+#thongbao{
+    color: #B90003;
+    font-style: italic;
+}

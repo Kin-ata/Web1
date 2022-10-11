@@ -15,7 +15,7 @@ table{
     background: url(khuyen-mai.png) center bottom no-repeat;
     background-size: contain;
     border: 2px solid #B90003;
-    box-shadow: #B90003 20px 20px 10px;
+    box-shadow: #B90003 5px 5px 10px;
     border-radius: 10px;
     width: 75%;
     height: 300px;

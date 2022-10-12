@@ -11,41 +11,40 @@
 <form action="" menthod="post" name="frmDangNhap" id="frmDangNhap" onSubmit="return GuiThongTin();">
     <tr align="center"><td colspan="2"><h1 align="center">Phiếu đăng ký</h1></td></tr>
     <table cellpadding="5" cellspacing="5">
-    <tr><td align="right">Họ tên</td>
+    <tr><td class="title">Họ tên</td>
         <td><input type="text" id="txtHoTen" name="txtHoTen"  size="30" maxlength="25" class="txt"></td></tr>
-    <tr><td align="right">Địa chỉ</td>
-        <td><textarea id="txtDiaChi" name="txtDiaChi" he size="30" maxlength="25" class="txt"></textarea></td></tr>
-    <tr><td align="right">Email</td>
-        <td><input type="email" id="txtEmail" name="txtEmail"  size="30" maxlength="25" class="txt"></td></tr>
-    <tr><td align="right">Điện thoại</td>
-        <td><input type="text" id="txtTenDN" name="txtTenDN"  size="30" maxlength="25" class="txt"></td></tr>
-    <tr><td align="right">Giới tính</td>
+    <tr><td class="title">Địa chỉ</td>
+        <td><textarea id="txtDiaChi" name="txtDiaChi" he rows="5" cols="35" class="txt"></textarea></td></tr>
+    <tr><td class="title">Email</td>
+        <td><input type="email" id="txtEmail" name="txtEmail"  size="25" maxlength="25" class="txt"></td></tr>
+    <tr><td class="title">Điện thoại</td>
+        <td><input type="text" id="txtTenDN" name="txtTenDN"  size="25" maxlength="25" class="txt"></td></tr>
+    <tr><td class="title">Giới tính</td>
         <td><input type="radio" id="Nam" name="GioiTinh" value="Nam">
-        <label for="Nam">Nam</label>
-        <input type="radio" id="Nuu" name="GioiTinh" value="Nu">
-        <label for="Nu">Nữ</label></td></tr>
-    <tr><td align="right">Nghề nghiệp</td>
-   <td><select name="cars" id="cars">
+        <label for="Nam" class="title">Nam</label>
+        <input type="radio" id="Nu" name="GioiTinh" value="Nu">
+        <label for="Nu" class="title">Nữ</label></td></tr>
+    <tr><td class="title">Nghề nghiệp</td>
+   <td><select name="cars" id="cars" class="txt">
     <option value="SinhVien">Sinh viên</option>
-    <option value="blabla">Blabla</option>
-    <option value="bleble">Bleble</option>
-    <option value="blibli">Blibli</option>
+    <option value="BacSi">Bác sĩ</option>
+    <option value="KySu">Kỹ sư</option>
+    <option value="GiaoVien">Giáo viên</option>
+    <option value="Khac">Khác</option>
   </select></td>
-    <tr><td align="right">Chọn sản phẩm</td>
-    <td><select id = "selLanguage"
-      multiple = "multiple"
-      size = "4">
+    <tr><td class="title">Chọn sản phẩm</td>
+    <td><select id = "selLanguage" multiple = "multiple" size = "4" class="txt">
      <option value = "HTML">Kem đánh răng</option>
      <option value = "CSS">Dầu gội</option>
      <option value = "JavaScript">Sữa tắm</option>
      <option value = "PHP">Bột giặt</option>
     </select></td>
     </tr>
-    <tr><td align="right">Dự đoán số người tham gia</td>
-        <td><input type="text" id="txtTenDN" name="txtTenDN"  size="30" maxlength="25" class="txt"></td></tr>
+    <tr><td class="title">Dự đoán số người tham gia</td>
+        <td><input type="text" id="txtTenDN" name="txtTenDN"  size="25" maxlength="25" class="txt"></td></tr>
     <tr align="center">
         <td colspan="2">
-        <input type="submit" id="btnDangNhap" name="btnDangNhap" value="Đăng nhập" class="btn">
+        <input type="submit" id="btnDangKy" name="btnDangKy" value="Đăng ký" class="btn">
         <input type="reset" id="btnLamLai" name="btnLamLai" value="Làm lại" class="btn" onClick="LamLai();">
         </td></tr>
     </tr align="center"><td colspan="2" height="50"><label id="thongbao"></label></td></tr>

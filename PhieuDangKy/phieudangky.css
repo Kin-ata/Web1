@@ -6,42 +6,42 @@ body{
 h1{
     font-size: 30px;
     font-weight: 700;
-    color: #fff;
+    color: white;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 1px blue, -1px -1px 3px blue, 0px 0px 10px skyblue;
+    text-shadow: 1px 1px 1px #0067A5, -1px -1px 3px rgb(0, 0, 252), 0px 0px 10px #0070FF;
 }
 table{
     background: url(khuyen-mai.png) center bottom no-repeat;
     background-size: contain;
-    box-shadow: skyblue 5px 5px 10px;
+    box-shadow: #0067A5 5px 5px 10px;
     border-radius: 10px;
-    width: 75%;
-    height: 300px;
+    width: 40%;
+    height: 400px;
     margin: auto;
 }
 .title{
     algin: right;
     text-align: right;
     font-weight: 700;
-    color: blue;
+    color: #0067A5;
 }
 input[name="GioiTinh"] {
-	accent-color: blue;
+	accent-color: #0070FF;
 }
 .txt{
     background-color:rgba(135, 207, 235, 0.50);
-    border: 1.5px dotted blue;
+    border: 1.5px dotted #0067A5;
     border-radius: 10px;
     padding: 5px;
     
 }
 .btn{
-    background-image:linear-gradient(blue,skyblue);
+    background-image:linear-gradient(#175dcb,#0991be);
     border-radius: 100px;
-    color: #ffffff;
+    color: white;
     font-weight: bold;
     border-radius: 7px;
     padding: 3px;
-    border: 2px solid aqua;
+    border: 2px solid #00ccfd;
 }

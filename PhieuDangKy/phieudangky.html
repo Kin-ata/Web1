@@ -7,25 +7,25 @@
 <script src="dangnhap.js"></script>
 
 </head>
-<body onLoad="txtTenDN.focus();">
+<body onLoad="txtHoTen.focus();">
 <form action="" menthod="post" name="frmDangNhap" id="frmDangNhap" onSubmit="return GuiThongTin();">
     <tr align="center"><td colspan="2"><h1 align="center">Phiếu đăng ký</h1></td></tr>
     <table cellpadding="5" cellspacing="5">
     <tr><td class="title">Họ tên</td>
         <td><input type="text" id="txtHoTen" name="txtHoTen"  size="30" maxlength="25" class="txt"></td></tr>
     <tr><td class="title">Địa chỉ</td>
-        <td><textarea id="txtDiaChi" name="txtDiaChi" he rows="5" cols="35" class="txt"></textarea></td></tr>
+        <td><textarea id="txtDiaChi" name="txtDiaChi" rows="5" cols="35" class="txt"></textarea></td></tr>
     <tr><td class="title">Email</td>
         <td><input type="email" id="txtEmail" name="txtEmail"  size="25" maxlength="25" class="txt"></td></tr>
     <tr><td class="title">Điện thoại</td>
-        <td><input type="text" id="txtTenDN" name="txtTenDN"  size="25" maxlength="25" class="txt"></td></tr>
+        <td><input type="tel" id="txtDienThoai" name="txtDienThoai"  size="25" maxlength="25" class="txt"></td></tr>
     <tr><td class="title">Giới tính</td>
         <td><input type="radio" id="Nam" name="GioiTinh" value="Nam">
         <label for="Nam" class="title">Nam</label>
         <input type="radio" id="Nu" name="GioiTinh" value="Nu">
         <label for="Nu" class="title">Nữ</label></td></tr>
     <tr><td class="title">Nghề nghiệp</td>
-   <td><select name="cars" id="cars" class="txt">
+   <td><select name="NgheNghiep" id="NgheNghiep" class="txt">
     <option value="SinhVien">Sinh viên</option>
     <option value="BacSi">Bác sĩ</option>
     <option value="KySu">Kỹ sư</option>
@@ -33,15 +33,15 @@
     <option value="Khac">Khác</option>
   </select></td>
     <tr><td class="title">Chọn sản phẩm</td>
-    <td><select id = "selLanguage" multiple = "multiple" size = "4" class="txt">
-     <option value = "HTML">Kem đánh răng</option>
-     <option value = "CSS">Dầu gội</option>
-     <option value = "JavaScript">Sữa tắm</option>
-     <option value = "PHP">Bột giặt</option>
+    <td><select name="SanPham" id = "SanPham" multiple = "multiple" size = "4" class="txt">
+     <option value = "KemDanhRang">Kem đánh răng</option>
+     <option value = "DauGoi">Dầu gội</option>
+     <option value = "SuaTam">Sữa tắm</option>
+     <option value = "BotGiat">Bột giặt</option>
     </select></td>
     </tr>
     <tr><td class="title">Dự đoán số người tham gia</td>
-        <td><input type="text" id="txtTenDN" name="txtTenDN"  size="25" maxlength="25" class="txt"></td></tr>
+        <td><input type="text" id="txtDuDoan" name="txtDuDoan"  size="25" maxlength="25" class="txt"></td></tr>
     <tr align="center">
         <td colspan="2">
         <input type="submit" id="btnDangKy" name="btnDangKy" value="Đăng ký" class="btn">

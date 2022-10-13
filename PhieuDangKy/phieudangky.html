@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <title>Phiếu đăng ký</title>
 <link rel="stylesheet" type="text/css" href="phieudangky.css">
-<script src="dangnhap.js"></script>
+<script src="phieudangky.js"></script>
 
 </head>
 <body onLoad="txtHoTen.focus();">
-<form action="" menthod="post" name="frmDangNhap" id="frmDangNhap" onSubmit="return GuiThongTin();">
+<form action="" menthod="post" name="frmDangKy" id="frmDangKy" onSubmit="return ValidForm();">
     <tr align="center"><td colspan="2"><h1 align="center">Phiếu đăng ký</h1></td></tr>
     <table cellpadding="5" cellspacing="5">
     <tr><td class="title">Họ tên</td>
@@ -20,12 +20,12 @@
     <tr><td class="title">Điện thoại</td>
         <td><input type="tel" id="txtDienThoai" name="txtDienThoai"  size="25" maxlength="25" class="txt"></td></tr>
     <tr><td class="title">Giới tính</td>
-        <td><input type="radio" id="Nam" name="GioiTinh" value="Nam">
+        <td><input type="radio" id="droNam" name="droGioiTinh" value="Nam">
         <label for="Nam" class="title">Nam</label>
-        <input type="radio" id="Nu" name="GioiTinh" value="Nu">
+        <input type="radio" id="rdoNu" name="rdoGioiTinh" value="Nu">
         <label for="Nu" class="title">Nữ</label></td></tr>
     <tr><td class="title">Nghề nghiệp</td>
-   <td><select name="NgheNghiep" id="NgheNghiep" class="txt">
+   <td><select name="cboNgheNghiep" id="cboNgheNghiep" class="txt">
     <option value="SinhVien">Sinh viên</option>
     <option value="BacSi">Bác sĩ</option>
     <option value="KySu">Kỹ sư</option>

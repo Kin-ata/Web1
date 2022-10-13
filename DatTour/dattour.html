@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ĐĂNG KÝ DU LỊCH</title>
+<link rel="stylesheet" type="text/css" href="dattour.css">
+<script src="dattour.js"></script>
+
+</head>
+<body onLoad="txtHoTen.focus();">
+<form action="" menthod="post" name="frmDatTour" id="frmDatTour" onSubmit="return ValidForm();">
+    <tr align="center"><td colspan="2"><h1 align="center">Phiếu đăng ký</h1></td></tr>
+    <table border="1">
+    <tr><td class="title">Họ tên</td>
+        <td><input type="text" id="txtHoTen" name="txtHoTen"  size="30" maxlength="25" class="txt"></td></tr>
+    <tr><td class="title">Địa chỉ</td>
+        <td><textarea id="txtDiaChi" name="txtDiaChi" rows="5" cols="35" class="txt"></textarea></td></tr>
+    <tr><td class="title">Điện thoại</td>
+        <td><input type="tel" id="txtDienThoai" name="txtDienThoai"  size="25" maxlength="25" class="txt"></td></tr>
+    <tr><td class="title">Khách Việt Nam</td>
+        <td><input type="checkbox" id="chkVietNam" name="chkVietNam" value="1" class="txt"></td></tr>
+    <tr><td class="title">Chọn tour</td>
+        <td><select id="cboChonTour" name="cboChonTour" class="txt">
+            <option value="1">Tour 1</option>
+            <option value="2">Tour 2</option>
+            <option value="3">Tour 3</option>
+            <option value="4">Tour 4</option>
+            <option value="5">Tour 5</option>
+            <option value="6">Tour 6</option>
+            <option value="7">Tour 7</option>
+            <option value="8">Tour 8</option>
+            <option value="9">Tour 9</option>
+            <option value="10">Tour 10</option>
+        </select></td></tr>
+    <tr><td class="title">Phương tiện</td>
+        <td><input type="radio" id="rdoPhuongTien" name="rdoPhuongTien" value="Maybay">
+        <label for="rdoPhuongTien" class="title">Máy bay</label>
+        <input type="radio" id="rdoPhuongTien" name="rdoPhuongTien" value="Xedulich">
+        <label for="rdoPhuongTien" class="title">Xe du lịch</label></td></tr>
+        <td colspan="2"><fieldset>
+            <legend class="title">Số lượng đoàn khách</legend>
+                <label class="title">Người lớn</label>
+                <label><input type="number" id="txtNguoiLon" name="txtNguoiLon"  size="10" maxlength="25" class="txt"></label>
+                <label class="title">Trẻ em</label>
+                <label><input type="number" id="txtTreEm" name="txtTreEm"  size="10" maxlength="25" class="txt"></td>
+    </fieldset></td>
+    <tr><td class="title">Ghi chú thêm</td>
+        <td><textarea id="txtGhichu" name="txtGhichu" rows="5" cols="35" class="txt"></textarea></td></tr>
+    <tr align="center">
+        <td colspan="2">
+        <input type="submit" id="btnDongY" name="btnDongY" value="Đồng ý" class="btn">
+        </td></tr>
+    </tr align="center"><td colspan="2" height="50"><label id="thongbao"></label></td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,50 +1,52 @@
-//JS Doc
-function ValidControl (control, message) {
-    if (control.value == "" || control.value == null) {
-        alert(message);
-        control.focus();
+// JS Doc
+function DatTour()
+{
+    if(txtHoTen.value==""||txtHoTen==null)
+    {
+        thongbao.innerText="Bạn chưa nhập họ tên";
+        txtHoTen.focus();
         return false;
     }
-    return true;
-}
-function ValidEmail () {
-    var apos = txtEmail.value.indexOf("@");
-    var dotpos = txtEmail.value.lastIndexOf(".");
-    if (apos < 1 || dotpos - apos < 2) {
-        alert("Email không hợp lệ");
-        txtEmail.focus();
+    if(txtDiaChi.value==""||txtDiaChi==null)
+    {
+        thongbao.innerText="Bạn chưa nhập địa chỉ";
+        txtDiaChi.focus();
         return false;
     }
-    return true;
-}
-function ValidPhone () {
-    var phone = txtDienThoai.value;
-    if (phone.length != 10 || isNaN(phone) || phone.charAt(0) != "0") {
-        alert("Số điện thoại không hợp lệ");
+    if(txtDienThoai.value==""||txtDienThoai==null)
+    {
+        thongbao.innerText="Bạn chưa nhập số điện thoại";
         txtDienThoai.focus();
         return false;
     }
-    return true;
-}
-function ValidForm () {
-    if (ValidControl(txtHoTen, "Bạn chưa nhập họ tên") == false) {
+    /* check rdoPhuongTien*/
+        {
+        var rdoPhuongTien = document.getElementsByName("rdoPhuongTien");
+        var check = false;
+        for(var i=0;i<rdoPhuongTien.length;i++)
+        {
+            if(rdoPhuongTien[i].checked)
+            {
+                check = true;
+                break;
+            }
+        }
+        if(!check)
+        {
+            thongbao.innerText="Bạn chưa chọn phương tiện";
+            return false;
+        }
+        }
+    if((txtNguoiLon.value==""||txtNguoiLon==null) && (txtTreEm.value==""||txtTreEm==null))
+    {
+        thongbao.innerText="Bạn chưa nhập số lượng đoàn khách";
+        txtNguoiLon.focus();
         return false;
     }
-    if (ValidControl(txtDiaChi, "Bạn chưa địa chỉ") == false) {
+    else
+    {
+        thongbao.innerText="Bạn đã đăng ký thành công!!!";
+        txtHoTen.select();
         return false;
     }
-    if (ValidControl(txtEmail, "Bạn chưa nhập email") == false) {
-        return false;
-    }
-    if (ValidControl(txtDienThoai, "Bạn chưa nhập số điện thoại") == false) {
-        return false;
-    }
-    if (ValidPhone() == false) {
-        alert("Số điện thoại không hợp lệ");
-        txtDienThoai.focus();
-        return false;
-    }
-}
-function LamLai(){
-    txtHoTen.focus();
 }

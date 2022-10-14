@@ -11,21 +11,31 @@ h1{
     margin-bottom: 20px;
 }
 table{
+    background-color: #ffffcd;
+    border-color: blue;
     border-collapse: collapse;
-    width: 40%;
-    height: 400px;
+    width: 600px;
     margin: auto;
 }
 fieldset{
-    width: 75%;
-    margin: auto;
+    width: 60%;
+    margin: 5px auto;
 }
 .title{
-    font-weight: 700;
-    color: #0067A5;
+    margin: 5px;
+    color: blue;
 }
 .txt{
-    margin: 5px;  
+    margin: 5px;
 }
 .btn{
+    margin: 5px;
+}
+#thongbao{
+    display: block;
+    text-align: center;
+    color: #B90003;
+    line-height: 200%;
+    font-size: larger;
+    font-weight: bold;
 }

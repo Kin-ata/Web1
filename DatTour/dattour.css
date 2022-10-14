@@ -11,6 +11,8 @@ h1{
     margin-bottom: 20px;
 }
 table{
+    table-layout: fixed;
+    column-width: 200px 400px;
     background-color: #ffffcd;
     border-color: blue;
     border-collapse: collapse;
